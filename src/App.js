@@ -33,9 +33,12 @@ function App() {
   return (
     
     <div className="App">
-      <div className='position-top'>
-      <Header/>
+      <div className="sticky-top">
+        <Header/>
       </div>
+      
+      <div className="container flex">
+
       
       {selectedNews ? (
         <Details 
@@ -48,6 +51,7 @@ function App() {
           onNewsClick={handleNewsClick}
         />
       )}
+      </div>
     </div>
   );
 };

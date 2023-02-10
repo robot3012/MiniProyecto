@@ -4,7 +4,7 @@ import React from 'react'
 function Header({ reference1, reference2,reference3 }) {
     return (
         
-            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-2">
+            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark p-2">
                 
                 <div className="container-fluid">
                     <div className="m-3">
