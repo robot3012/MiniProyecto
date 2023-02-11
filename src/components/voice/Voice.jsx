@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 
-const SpanishNarrator = ({ text,title,author,date }) => {
+const SpanishNarrator = ({ text,title,author }) => {
   const [speaking, setSpeaking] = useState(false);
 
   const speak = () => {
@@ -12,7 +12,6 @@ const SpanishNarrator = ({ text,title,author,date }) => {
     if (text !== "") {
       const utterThis = new SpeechSynthesisUtterance("De "+author+", Este es nuestro titulo para hoy, "+title+", "+text);
       utterThis.onend = () => {
-        console.log("Speech synthesis ended");
         setSpeaking(false);
       };
       utterThis.onerror = () => {
