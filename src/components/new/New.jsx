@@ -7,7 +7,7 @@ import Nullimage from "../../img/nullimage.png";
 
 
 import { endpointPath } from "../../api/Api";
-import { header } from "../../api/ConfigNavbar";
+import { header } from "../header/ConfigNavbar";
 
 
 function New(props) {

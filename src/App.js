@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import { router } from "./api/ConfigNavbar";
+import { router } from "./components/header/ConfigNavbar";
 import Header from './components/header/Header';
 import HeaderDown from './components/header/HeaderDown';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

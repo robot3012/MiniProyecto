@@ -1,5 +1,5 @@
 import React from "react"
-import { author, summary, channel, lastUpdate } from "../../api/ConfigNavbar"
+import { author, summary, channel, lastUpdate } from "../header/ConfigNavbar"
 
 export default function Details(props) {
 
