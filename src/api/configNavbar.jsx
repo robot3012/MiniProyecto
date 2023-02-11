@@ -1,7 +1,7 @@
-export const navbarBrand = "News App";
-export const header = (category) => `News - Top ${category} Headlines`;
+
+export const header = (category) => `News - Top ${category} `;
 export const navs = [
-    // { nav: "Home", page: "/" },
+     //{ nav: "Home", page: "/" },
     // { nav: "General", page: "/general" },
     { nav: "Business", page: "/business" },
     { nav: "Sports", page: "/sports" },
@@ -12,7 +12,7 @@ export const navs = [
 ]
 
 export const router = [
-    // { path: "/", key: "general", category: "general", country: "mx" },
+     { path: "/", key: "general", category: "general", country: "mx" },
     { path: "/general", key: "general", category: "general", country: "mx" },
     { path: "/business", key: "business", category: "business", country: "mx" },
     { path: "/sports", key: "sports", category: "sports", country: "mx" },
