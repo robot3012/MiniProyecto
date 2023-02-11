@@ -1,6 +1,5 @@
 {
   "name": "web-noticias",
-  "homepage": "http://odtventanita.atwebpages.com/newSite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
