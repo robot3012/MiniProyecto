@@ -1,17 +1,24 @@
+import React, { useState, useEffect } from "react";
+// import axios from "axios";
+// import NewsItem from "../NewsItem/NewsItem";
+// import Spinner from "../Spinner/Spinner";
+// import { endpointPath } from "../../api/api";
+// import { header } from "../../api/configNavbar";
 function Body({ news, onNewsClick }) {
   return (
     <ul className="row row-cols-auto   list-group-flush  shadow justify-content-center" >
       {news.map(newsItem => (
         <li className=" list-group-item shadow  p-4 "
           key={newsItem.url} 
-          onClick={() => onNewsClick(newsItem)}
+          
         >
           <div className="card h-100" style={{width: "18rem"}}>
             <div className="card-body">
               <img className="w-100 h-25" src={newsItem.urlToImage}/>
               <h3 className="card-title"><strong>{newsItem.title}</strong></h3>
-              <p className="card-text">{newsItem.description}</p>
-              <p className="card-text">{newsItem.publishedAt} </p>
+              <p className="card-text text-start">{newsItem.description}</p>
+              <a href="#" onClick={() => onNewsClick(newsItem)}>read more</a>
+              <p className="card-text" >{newsItem.publishedAt} </p>
               
             </div>
           </div>

@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Details from './components/Details';
-import Body from './components/Body';
+import Details from './components/body-new/Details';
+import Body from './components/body-new/Body';
+import Decir from  './components/body-new/Details';
 
-import Header from './components/Header';
+import Header from './components/header/Header';
 
-const NewsAPI = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=4473d0b599484c6d8d1cb81d5401e31f';
+const NewsAPI = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=430e748f85e24368ace6fe90a6d724ad';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -40,17 +41,21 @@ function App() {
       <div className="container flex">
 
       
-      {selectedNews ? (
-        <Details 
-          news={selectedNews}
-          onBackClick={handleBackClick}
+        {selectedNews ? (
+          <Details 
+            news={selectedNews}
+            onBackClick={handleBackClick}
+          />
+        ) : (
+          <Body 
+          
+            news={news}
+            onNewsClick={handleNewsClick}
+            
         />
-      ) : (
-        <Body 
-          news={news}
-          onNewsClick={handleNewsClick}
-        />
+        
       )}
+      
       </div>
     </div>
   );
