@@ -54,7 +54,7 @@ function New(props) {
       <div className="text-center">
         <strong>{header(capitaLize(props.category))}</strong>
       </div>
-      {/* {loading && <div />} */}
+      
       <div
         dataLength={articles.length}
         next={fetchMoreData}

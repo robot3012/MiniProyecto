@@ -1,8 +1,7 @@
 
 export const header = (category) => `News - Top ${category} `;
 export const navs = [
-     //{ nav: "Home", page: "/" },
-    // { nav: "General", page: "/general" },
+    
     { nav: "Business", page: "/business" },
     { nav: "Sports", page: "/sports" },
     { nav: "Science", page: "/science" },

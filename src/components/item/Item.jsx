@@ -21,6 +21,9 @@ function Item(props) {
                 <a href={urlNews} target="_blank">Read more →</a>
                 <Voice
                 text={description}
+                date={date}
+                title={title}
+                author={author}
                 />
                 
                 
